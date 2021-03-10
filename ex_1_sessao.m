@@ -108,6 +108,7 @@ div = m/mT;
 squared = m^2;
 
 % o que alterava nas operações anteriores para serem feitas elemento a
+<<<<<<< HEAD
 % elemento?
 
 % obtenha de 3 maneiras diferentes a matriz twos
@@ -166,24 +167,3 @@ mult = conv(p,q);
 % Tendo em conta as raizes que obteve utilize a função poly de maneira a
 % obter de novo os polinomios p e q; Notou alguma diferença entre o
 % resultado obtido e os polinomios do enunciado? Compare
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
