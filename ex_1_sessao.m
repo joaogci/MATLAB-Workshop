@@ -96,7 +96,7 @@ v = random(15:20,7); % para fazer
 
 % Construa um vetor com os elementos da matriz random maiores que 15
 
-v_maior_15 = random(random > 15);
+v_maior_15 = random(random > 15); % para fazer
 
 %% Aritmética de Matrizes
 clear v_maior_15 v random el_last el_one el n_elementos maior_dim M A
@@ -118,9 +118,9 @@ twos = [2 2 2 2 2 2;
         2 2 2 2 2 2;
         2 2 2 2 2 2];
 
-twos_1 = zeros(6,6) + 2;
-twos_2 = 2*ones(6,6);
-twos_3 = 2*ones(6,6) + zeros(6,6);
+twos_1 = zeros(6,6) + 2; % para fazer
+twos_2 = 2*ones(6,6); % para fazer
+twos_3 = 2*ones(6,6) + zeros(6,6); % para fazer
 %% Sistemas de Equações
 clear
 
@@ -130,19 +130,23 @@ Considere o seguinte sistema de equações
     4u + 2v - 3w = 10
     7u - 3v      = -4
     5u + 7v + 4w = 9
+
+Escreve as matrizes A e b que lhe permitam obter o valor do vetor [u,v,w]
 %}
 
 A = [4     2     -3;
      7     -3     0;
-     5     7     4];
+     5     7     4]; % para fazer
  
-b = [5; -2; 9];
+b = [5; -2; 9]; % para fazer
 
-%x = A\b;
-%x = inv(A)*b;
+% Obtenha o vetor [u,v,w]
+
+%x = A\b; % para fazer
+%x = inv(A)*b; % para fazer
 
 % Obtenha o mesmo resultado através de uma função built-in ao MATLAB
-%x = linsolve(A,b);
+%x = linsolve(A,b); % para fazer
 
 %% Polinómios 
 clear
@@ -151,35 +155,35 @@ clear
 % p(x) = x^5 - 2x^3 + 0.5x^2 - 49x + 2
 % q(x) = 2x^4 - 3x^2 + 5x
 
-p = [1 0 -2 0.5 -49 2];
-q = [2 0 -3 5 0];
+p = [1 0 -2 0.5 -49 2]; % para fazer
+q = [2 0 -3 5 0]; % para fazer
 
 % Calcule as raizes de p(x) e q(x)
 
-raizes_p = roots(p);
-raizes_q = roots(q);
+raizes_p = roots(p); % para fazer
+raizes_q = roots(q); % para fazer
 
 % utilize o comando que permita a multiplicação dos polinomios
 
-mult = conv(p,q);
+mult = conv(p,q); % para fazer
 
 % Tendo em conta as raizes que obteve utilize a função poly de maneira a
 % obter de novo os polinomios p e q; Notou alguma diferença entre o
 % resultado obtido e os polinomios do enunciado? Compare
 
-new_p = poly(raizes_p);
-new_q = poly(raizes_q);
+new_p = poly(raizes_p); % para fazer
+new_q = poly(raizes_q); % para fazer
 
 %% Plots
-
+clear
 % Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
 % de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
 close
 
-x = 0:0.1:2*pi;
-y = sin(x);
+x = 0:0.1:2*pi; % para fazer
+y = sin(x); % para fazer
 
-plot(x, y, 'xr')
+plot(x, y, 'xr') % para fazer
 
 % Dê plot de duas funções f(x1) = 2 * x1 - 1 e g(x2) = (x2)^2, no mesmo
 % gráfico, a primeira com uma linha azul e a segunda com uma linha 
@@ -187,15 +191,15 @@ plot(x, y, 'xr')
 % 0.1 e para o da g use um vetor de -5 a 5 com 100 pontos.
 close
 
-x1 = -10:0.1:10;
-x2 = linspace(-5, 5, 100);
+x1 = -10:0.1:10; % para fazer
+x2 = linspace(-5, 5, 100); % para fazer
 
-f = 2 * x1 - 1;
-g = x2 ^ 2;
+f = 2 * x1 - 1; % para fazer
+g = x2 ^ 2; % para fazer
 
-plot(x1, f, 'b')
-hold on 
-plot(x2 , g, 'k')
+plot(x1, f, 'b') % para fazer
+hold on  % para fazer
+plot(x2 , g, 'k') % para fazer
 
 % Ou, alternativamente,
 % plot(x1, f, 'b',x2, g, 'k')
@@ -204,11 +208,11 @@ plot(x2 , g, 'k')
 % de cima apareça a função g e no de baixo a função f.
 close
 
-subplot(2, 1, 1)
-plot(x2, g, 'k')
+subplot(2, 1, 1) % para fazer
+plot(x2, g, 'k') % para fazer
 
-subplot(2, 1, 2)
-plot(x1, f, 'b')
+subplot(2, 1, 2) % para fazer
+plot(x1, f, 'b') % para fazer
 
 
 
