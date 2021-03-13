@@ -172,6 +172,52 @@ new_q = poly(raizes_q);
 
 %% Plots
 
+% Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
+% de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
+close
+
+x = 0:0.1:2*pi;
+y = sin(x);
+
+plot(x, y, 'xr')
+
+% Dê plot de duas funções f(x1) = 2 * x1 - 1 e g(x2) = (x2)^2, no mesmo
+% gráfico, a primeira com uma linha azul e a segunda com uma linha 
+% preta. Para o dominio de f use um vetor de -10 a 10 com um passo de
+% 0.1 e para o da g use um vetor de -5 a 5 com 100 pontos.
+close
+
+x1 = -10:0.1:10;
+x2 = linspace(-5, 5, 100);
+
+f = 2 * x1 - 1;
+g = x2 ^ 2;
+
+plot(x1, f, 'b')
+hold on 
+plot(x2 , g, 'k')
+
+% Ou, alternativamente,
+% plot(x1, f, 'b',x2, g, 'k')
+
+% Com as funções do exercício anterior faça um subplot onde no gráfico 
+% de cima apareça a função g e no de baixo a função f.
+close
+
+subplot(2, 1, 1)
+plot(x2, g, 'k')
+
+subplot(2, 1, 2)
+plot(x1, f, 'b')
+
+
+
+
+
+
+
+
+
 
 
 
