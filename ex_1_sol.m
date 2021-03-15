@@ -16,7 +16,7 @@ v4 = [1 2 3; 3 2 1];
 v5 = 1 + 1i;
 %whos
 
-% Utilizando função clear apague as variaveis v2 e v3
+% Utilizando função clear apague as variaveis v2 e v3 da Workspace
 clear v2 v3 % para fazer
 
 % Altere o argumento da função clear de forma a apagar todas as variaveis da
@@ -138,15 +138,14 @@ A = [4     2     -3;
      7     -3     0;
      5     7     4]; % para fazer
  
-b = [5; -2; 9]; % para fazer
+b = [10; -4; 9]; % para fazer
 
 % Obtenha o vetor [u,v,w]
 
-x = A\b; % para fazer
-x = inv(A)*b; % para fazer
+x1 = inv(A)*b; % para fazer
 
 % Obtenha o mesmo resultado através de uma função built-in ao MATLAB
-x = linsolve(A,b); % para fazer
+x2 = linsolve(A,b); % para fazer
 
 %% Polinómios 
 clear
@@ -176,19 +175,22 @@ new_q = poly(raizes_q); % para fazer
 
 %% Plots
 clear
+%{
 % Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
 % de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
+%}
 close
 
 x = 0:0.1:2*pi; % para fazer
 y = sin(x); % para fazer
 
 plot(x, y, 'xr') % para fazer
-
-% Dê plot de duas funções f(x1) = 2 * x1 - 1 e g(x2) = (x2)^2, no mesmo
-% gráfico, a primeira com uma linha azul e a segunda com uma linha 
-% preta. Para o dominio de f use um vetor de -10 a 10 com um passo de
-% 0.1 e para o da g use um vetor de -5 a 5 com 100 pontos.
+%{
+Dê plot de duas funções f(x1) = 2 * x1 - 1 e g(x2) = (x2)^2, no mesmo
+gráfico, a primeira com uma linha azul e a segunda com uma linha 
+preta. Para o dominio de f use um vetor de -10 a 10 com um passo de
+0.1 e para o da g use um vetor de -5 a 5 com 100 pontos.
+%}
 close
 
 x1 = -10:0.1:10; % para fazer
