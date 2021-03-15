@@ -206,8 +206,10 @@ plot(x2 , g, 'k') % para fazer
 % Ou, alternativamente,
 % plot(x1, f, 'b',x2, g, 'k')
 
-% Com as funções do exercício anterior faça um subplot onde no gráfico 
-% de cima apareça a função g e no de baixo a função f.
+%{
+Com as funções do exercício anterior faça um subplot onde no gráfico 
+de cima apareça a função g e no de baixo a função f.
+%}
 close
 
 subplot(2, 1, 1) % para fazer

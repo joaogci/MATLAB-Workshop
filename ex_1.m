@@ -203,9 +203,10 @@ close
 
 % Ou, alternativamente,
 %plot(...)
-
-% Com as funções do exercício anterior faça um subplot onde no gráfico 
-% de cima apareça a função g e no de baixo a função f.
+%{
+Com as funções do exercício anterior faça um subplot onde no gráfico 
+de cima apareça a função g e no de baixo a função f.
+%}
 close
 
 %subplot(...)
