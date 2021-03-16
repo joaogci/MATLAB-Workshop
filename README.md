@@ -1,7 +1,6 @@
-# MATLAB-Workshop
+# Workshop de MATLAB - IEEE
 
-## Duas sessões 1ª dia 17, 2ª dia 24.
+Duas Sessões, primeira dia 17 das 16:00 às 18:00 e segunda dia 24 das 16:00 às 18:00.
 
-* PowerPoint 1ª aula -> https://docs.google.com/presentation/d/1EYvc68KVzwyz_mRO-Wrep-nmgNhun630k3IWMRsc6u4/edit#slide=id.p2
+Aqui podem fazer o download dos slides, exercícios e das resoluçẽos.
 
-* PowerPoint 2ª aula -> https://docs.google.com/presentation/d/1KAhgAGs1sEJQysiglAMT4_qWvd-T6UG25JtEV3Y5kLc/edit#slide=id.p
