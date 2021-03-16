@@ -149,10 +149,11 @@ x2 = linsolve(A,b); % para fazer
 
 %% Polinómios 
 clear
-
-% Represente os seguintes polinómios
-% p(x) = x^5 - 2x^3 + 0.5x^2 - 49x + 2
-% q(x) = 2x^4 - 3x^2 + 5x
+%{
+Represente os seguintes polinómios
+p(x) = x^5 - 2x^3 + 0.5x^2 - 49x + 2
+q(x) = 2x^4 - 3x^2 + 5x
+%}
 
 p = [1 0 -2 0.5 -49 2]; % para fazer
 q = [2 0 -3 5 0]; % para fazer
@@ -165,19 +166,19 @@ raizes_q = roots(q); % para fazer
 % utilize o comando que permita a multiplicação dos polinomios
 
 mult = conv(p,q); % para fazer
-
-% Tendo em conta as raizes que obteve utilize a função poly de maneira a
-% obter de novo os polinomios p e q; Notou alguma diferença entre o
-% resultado obtido e os polinomios do enunciado? Compare
-
+%{
+Tendo em conta as raizes que obteve utilize a função poly de maneira a
+obter de novo os polinomios p e q; Notou alguma diferença entre o
+resultado obtido e os polinomios do enunciado? Compare
+%}
 new_p = poly(raizes_p); % para fazer
 new_q = poly(raizes_q); % para fazer
 
 %% Plots
 clear
 %{
-% Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
-% de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
+Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
+de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
 %}
 close
 
@@ -197,7 +198,7 @@ x1 = -10:0.1:10; % para fazer
 x2 = linspace(-5, 5, 100); % para fazer
 
 f = 2 * x1 - 1; % para fazer
-g = x2 ^ 2; % para fazer
+g = x2 .^ 2; % para fazer
 
 plot(x1, f, 'b') % para fazer
 hold on  % para fazer

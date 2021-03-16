@@ -147,11 +147,11 @@ Escreve as matrizes A e b que lhe permitam obter o valor do vetor [u,v,w]
 
 %% Polinómios 
 clear
-
-% Represente os seguintes polinómios
-% p(x) = x^5 - 2x^3 + 0.5x^2 - 49x + 2
-% q(x) = 2x^4 - 3x^2 + 5x
-
+%{
+Represente os seguintes polinómios
+p(x) = x^5 - 2x^3 + 0.5x^2 - 49x + 2
+q(x) = 2x^4 - 3x^2 + 5x
+%}
 %p = ...
 %q = ...
 
@@ -163,21 +163,21 @@ clear
 % utilize o comando que permita a multiplicação dos polinomios
 
 %mult = ...
-
-% Tendo em conta as raizes que obteve utilize a função poly de maneira a
-% obter de novo os polinomios p e q; Notou alguma diferença entre o
-% resultado obtido e os polinomios do enunciado? Compare
-
+%{
+Tendo em conta as raizes que obteve utilize a função poly de maneira a
+obter de novo os polinomios p e q; Notou alguma diferença entre o
+resultado obtido e os polinomios do enunciado? Compare
+%}
 %new_p = ...
 %new_q = ...
 
 %% Plots
 clear
 %{
-% Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
-% de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
+Faça um gráfico da função seno no intervalo de [0, 2*pi], com um passo
+de 0.1. A linha do gráfico deve ser a vermelho, com marcadores de 'x'.
 %}
-close
+%close
 
 %x = ...
 %y = ...
@@ -190,7 +190,7 @@ gráfico, a primeira com uma linha azul e a segunda com uma linha
 preta. Para o dominio de f use um vetor de -10 a 10 com um passo de
 0.1 e para o da g use um vetor de -5 a 5 com 100 pontos.
 %}
-close
+%close
 
 %x1 = ...
 %x2 = ...
@@ -207,7 +207,7 @@ close
 Com as funções do exercício anterior faça um subplot onde no gráfico 
 de cima apareça a função g e no de baixo a função f.
 %}
-close
+%close
 
 %subplot(...)
 %plot(...)
