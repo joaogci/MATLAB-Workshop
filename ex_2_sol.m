@@ -167,6 +167,8 @@ end
 
 %% Funções
 clear
+addpath("./functions") % este comando dá import das funções que se 
+                       % encontram na pasta functions
 %{
     Uma função no MATLAB tem a seguinte sintaxe:
     
