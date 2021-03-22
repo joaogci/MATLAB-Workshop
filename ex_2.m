@@ -17,74 +17,25 @@ clear
     Dê uma cor e uma forma diferente a cada gráfico
 %}
 
-x = -2*pi:0.1:2*pi;
+%x = ...;
 
-f = 4*cos(5*x);
-g = 2*sin(2*x + pi/4);
-h = cos(x).*sin(x);
-j = 2*cos(x)-3*sin(x);
-
-plot(x,f,'-b',x,g,'.r',x,h,'*g',x,j,'ok')
-close
 
 %{
     Separe os gráficos das funções descritas a cima, adicione título, nome
     aos eixos e costumize cada um de forma diferente.
 %}
 
-subplot(2,2,1)
-plot(x,f,'-b')
-title('f(x)=4cos(5x)')
-xlabel('x')
-ylabel('f(x)')
+%close
 
-subplot(2,2,2)
-plot(x,g,'.r')
-title('g(x)=2sen(2x+pi/4)')
-ylabel('g(x)')
-xlabel('x')
+%subplot(...)
 
-subplot(2,2,3)
-plot(x,h,'*g')
-title('h(x)=cos(x)sen(x)')
-ylabel('h(x)')
-xlabel('x')
-
-subplot(2,2,4)
-plot(x,j,'ok')
-title('g(x)=2cos(x)-3sen(x)')
-ylabel('g(x)')
-xlabel('x')
 
 %   Repita o exercicio anterior atribuindo uma janela a cada gráfico.
 
-close
+%close
 
-figure(1)
-plot(x,f,'-b')
-title('f(x)=4cos(5x)')
-xlabel('x')
-ylabel('f(x)')
+%...
 
-figure(2)
-plot(x,g,'.r')
-title('g(x)=2sen(2x+pi/4)')
-ylabel('g(x)')
-xlabel('x')
-
-figure(3)
-plot(x,h,'*g')
-title('h(x)=cos(x)sen(x)')
-ylabel('h(x)')
-xlabel('x')
-
-figure(4)
-plot(x,j,'ok')
-title('g(x)=2cos(x)-3sen(x)')
-ylabel('g(x)')
-xlabel('x')
-
-close all
 
 %{
     Como já pode ter reparado, existe um ficheiro plot3d.mat neste
@@ -92,18 +43,16 @@ close all
     (X,Y,Vnew). Utilize a função load para as descarregar para a sua 
     workspace.
 %}
+%close 
 
-load("plot3d","X","Y","Vnew");
+%load(...);
 
 %{
     Utilize as funções plot3 e mesh para visualizar os seus valores.
     Nota: é recomendado que passe como argumento '.' à função plot3.
 %}
 
-figure(1)
-plot3(X,Y,Vnew,'.')
-figure(2)
-mesh(X,Y,Vnew)
+%figure(...)
 
 %% Loops e Controlo de Fluxo
 close
@@ -137,34 +86,13 @@ end
     matriz A seja igual à matriz B
 %}
 
-B = zeros(N,N);
-row = 1;
-column = 1;
-i = 1;
-
-while i <= numel(B)
-    B(row,column) = i;
-    column = column + 1;
-    if column == N + 1
-        row = row + 1;
-        column = 1;
-    end
-    i = i + 1;
-end
+%B = ...
 
 %{
     Sem utilizar um if obtenha uma matriz igual a matriz A e B
 %}
 
-C = zeros(N,N);
-count = 1;
-
-for i = 1:N
-    for j = 1:N
-        C(i,j) = count;
-        count = count + 1;
-    end
-end
+%C = ...
 
 %% Funções
 clear
@@ -181,17 +109,11 @@ addpath("./functions") % este comando dá import das funções que se
     Nota: Crie um script MATLAB para cada uma
 %}
 
-x = -2*pi:0.1:2*pi;
-
-f = f_sol(x);
-g = g_sol(x);
-h = h_sol(x);
-j = j_sol(x);
+%...
 
 % Crie uma só função que reproduza o output das funções anterior
 
-[f,g,h,j] = all_sol(x);
-
+%...
 %% Animações
 clear 
 close
@@ -200,21 +122,11 @@ close
     Para consolidar o que aprendeste no workshop vamos passar para 
     exercicios de animações. 
 
-    Crie uma animação da função cos(x)/x no intervalo de 1 a 30 com 1000
+    Crie uma animação da função cos(x)/x no intervalo de 1 a 30 com 200
     pontos. Adapte os eixos para uma melhor visualização.
 %}
 
-N = 200;
-x = linspace(1,30,N);
-y = cos(x)./x;
-
-for i = 1:length(x)
-    plot(x(i),y(i),'b.')
-    hold on
-    pause(0.001)
-    xlim([0 30])
-    ylim([-1 1])
-end
+% ...
 
 %%
 close
@@ -229,12 +141,4 @@ lambda = 0.02;
 %   onde a expressão do raio é a seguinte:
 r = r0*exp(-lambda*theta);
 
-x = r.*cos(theta);
-y = r.*sin(theta);
-
-for i = 1:length(theta)
-    plot(x(i),y(i),'ko')
-    hold on
-    pause(0.01)
-    axis([-5 5 -5 5])
-end
+%...
