@@ -192,27 +192,15 @@ j = j_sol(x);
 clear 
 close
 
-%{
-    Para consolidar o que aprendeste no workshop vamos passar para 
-    exercicios de animações. 
 
-    Crie uma animação da função cos(x)/x no intervalo de 1 a 30 com 1000
-    pontos. Adapte os eixos para uma melhor visualização.
-%}
-
-N = 1000;
-x = linspace(1,30,N);
-y = cos(x)./x;
+x = linspace(0,30,1000);
 
 for i = 1:length(x)
-    plot(x(i),y(i),'b.')
-    hold on
-    pause(0.001)
-    xlim([0 30])
-    ylim([-1 1])
+   
+    
+    
+   
 end
-
-
 
 
 
