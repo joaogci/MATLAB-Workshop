@@ -26,6 +26,10 @@ plot(x, y1, '-r')
 hold on
 plot(x, y2, '-k')
 
+figure(3)
+y = func(x);
+plot(x, y, '-m')
+
 
 function y = f1(x)
     y = sin(x) * cos(x) + cosh(0.5 * x);
