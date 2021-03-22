@@ -3,7 +3,7 @@ close
 clc
 
 %
-% Exemplo 3D plots - Sessão 2
+% Exemplo personalização plots - Sessão 2
 % João Inácio, 22nd Mar 2021
 %
 

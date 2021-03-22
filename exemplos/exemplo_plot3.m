@@ -7,9 +7,6 @@ clc
 % João Inácio, 20th Mar 2021
 %
 
-
-
-
 % Gráfico 1
 figure(1)
 
