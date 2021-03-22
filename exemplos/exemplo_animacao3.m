@@ -4,7 +4,7 @@ clc
 
 %
 % Exemplo Animação 3 - Sessão 2
-% João Inácio, 22th Mar 2021
+% João Inácio, 22nd Mar 2021
 %
 
 % Fazer um ponto rodar numa circunferencia.

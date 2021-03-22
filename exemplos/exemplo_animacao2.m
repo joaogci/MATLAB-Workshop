@@ -4,7 +4,7 @@ clc
 
 %
 % Exemplo Animação 2 - Sessão 2
-% João Inácio, 22th Mar 2021
+% João Inácio, 22nd Mar 2021
 %
 
 % Fazer uma função cos(x) decair. 
