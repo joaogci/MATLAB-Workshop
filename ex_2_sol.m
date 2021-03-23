@@ -193,30 +193,6 @@ j = j_sol(x);
 [f,g,h,j] = all_sol(x);
 
 %% Animações
-clear 
-close
-
-%{
-    Para consolidar o que aprendeste no workshop vamos passar para 
-    exercicios de animações. 
-
-    Crie uma animação da função cos(x)/x no intervalo de 1 a 30 com 1000
-    pontos. Adapte os eixos para uma melhor visualização.
-%}
-
-N = 200;
-x = linspace(1,30,N);
-y = cos(x)./x;
-
-for i = 1:length(x)
-    plot(x(i),y(i),'b.')
-    hold on
-    pause(0.001)
-    xlim([0 30])
-    ylim([-1 1])
-end
-
-%%
 close
 clear
 
@@ -225,9 +201,18 @@ theta = 0:0.1:n_voltas*2*pi;
 r0 = 5;
 lambda = 0.02;
 
-%   Crie uma animação de um circulo, em coordenadas polares, 
-%   onde a expressão do raio é a seguinte:
+%{
+    Para consolidar o que aprendeste no workshop vamos passar para 
+    exercicios de animações. 
+
+    Crie uma animação de um circulo, em coordenadas polares, 
+    onde a expressão do raio é a seguinte:
+        r = r0 * exp(-lambda*theta)
+
+    Ajuste os eixos para uma melhor visualização
+%}
 r = r0*exp(-lambda*theta);
+
 
 x = r.*cos(theta);
 y = r.*sin(theta);
@@ -243,8 +228,15 @@ end
 close 
 clear
 
-N = 200;
-x = linspace(1,30,N);
+%{
+    Faça a animação de uma função sinosoidal com argumento x*alfa, onde
+    alfa varia de -2.5 a 2.5 com passo de 0.1. Assuma que o dominio da
+    função é de 1 a 30 com 200 pontos
+
+    Ajuste os eixos para uma melhor visualização
+%}
+
+x = linspace(1,30,200);
 alfa = -2.5:0.1:2.5;
 
 for i = 1:length(alfa)
@@ -257,7 +249,34 @@ for i = 1:length(alfa)
     ylim([-1 1])
 end
 
+%%
+clear 
+close
 
+g = 9.81; % 10
+t0 = 0;
+dt = 0.1;
+tf = 5;
+v0 = 20;
+theta = 30;
+y0 = 10;
 
+%{
+    Utilizando as equações de movimento faça a animação de um projétil
+    lançado com um ângulo de 30º
 
+    Despreze a resistência do ar :)
+%}
 
+t = t0:dt:tf;
+y = y0 + v0*sind(theta).*t - (1/2)*g*t.^2;
+x = v0*cosd(theta).*t;
+
+for i = 1:length(y)
+    plot(x(i),y(i),'ro')
+    axis([0 max(x) 0 max(y)])
+    pause(0.1)
+    if y(i) <= 0
+        break
+    end
+end

@@ -115,20 +115,6 @@ addpath("./functions") % este comando dá import das funções que se
 
 %...
 %% Animações
-clear 
-close
-
-%{
-    Para consolidar o que aprendeste no workshop vamos passar para 
-    exercicios de animações. 
-
-    Crie uma animação da função cos(x)/x no intervalo de 1 a 30 com 200
-    pontos. Adapte os eixos para uma melhor visualização.
-%}
-
-% ...
-
-%%
 close
 clear
 
@@ -137,8 +123,53 @@ theta = 0:0.1:n_voltas*2*pi;
 r0 = 5;
 lambda = 0.02;
 
-%   Crie uma animação de um circulo, em coordenadas polares, 
-%   onde a expressão do raio é a seguinte:
-r = r0*exp(-lambda*theta);
+%{
+    Para consolidar o que aprendeste no workshop vamos passar para 
+    exercicios de animações. 
+
+    Crie uma animação de um circulo, em coordenadas polares, 
+    onde a expressão do raio é a seguinte:
+        r = r0 * exp(-lambda*theta)
+
+    Ajuste os eixos para uma melhor visualização
+%}
+
+
+% ...
+
+%%
+close 
+clear
+
+%{
+    Faça a animação de uma função sinosoidal com argumento x*alfa, onde
+    alfa varia de -2.5 a 2.5 com passo de 0.1. Assuma que o dominio da
+    função é de 1 a 30 com 200 pontos
+
+    Ajuste os eixos para uma melhor visualização
+%}
 
 %...
+
+
+
+%%
+clear 
+close
+
+g = 9.81; % 10
+t0 = 0;
+dt = 0.1;
+tf = 5;
+v0 = 20;
+theta = 30;
+y0 = 10;
+
+%{
+    Utilizando as equações de movimento faça a animação de um projétil
+    lançado com um ângulo de 30º
+
+    Despreze a resistência do ar :)
+%}
+
+% ...
