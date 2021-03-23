@@ -238,3 +238,26 @@ for i = 1:length(theta)
     pause(0.01)
     axis([-5 5 -5 5])
 end
+
+%%
+close 
+clear
+
+N = 200;
+x = linspace(1,30,N);
+alfa = -2.5:0.1:2.5;
+
+for i = 1:length(alfa)
+    y = cos(alfa(i) * x);
+    
+    plot(x,y,'b-.')
+    pause(0.1)
+    
+    xlim([0 30])
+    ylim([-1 1])
+end
+
+
+
+
+
